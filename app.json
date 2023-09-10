@@ -1,0 +1,62 @@
+{
+    "name": "𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𓏺𝞝𝙏𝙊 ",
+    "description": "تنصيب بوتات اغاني للتشغيل في المكالمات الصوتية",
+    "logo": "https://telegra.ph/file/1e274d08ac055a71cfad8.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "هنا توكن بوتك",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضع ايدي حسابك هنا",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @G_7_Rr",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "ضع ايدي الحساب المساعد",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "ضع رابط جروب الدعم",
+        "value": "https://t.me/T7_AU",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
